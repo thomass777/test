@@ -4,46 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>测试网页</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            width: 80%;
-            max-width: 800px;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-    </style>
+    <title>文档列表</title>
 </head>
 <body>
-    <div class="content" id="content">
-        加载中...
-    </div>
-
-    <script>
-        // 使用Fetch API加载外部文本文件
-        fetch('测试内容.txt')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('content').innerHTML = data.replace(/\n/g, '<br>');
-            })
-            .catch(error => {
-                document.getElementById('content').innerHTML = '加载内容时出错。';
-            });
-    </script>
+    <h1>文档列表</h1>
+    <ul>
+        <li><a href="https://thomass777.github.io/test/材料1%20(有关那一束红)%2001.doc" download>材料1 (有关那一束红) 01.doc</a></li>
+        <li><a href="https://thomass777.github.io/test/材料2%20(历行节约，反对浪费).doc" download>材料2 (历行节约，反对浪费).doc</a></li>
+        <li><a href="https://thomass777.github.io/test/材料3%20(多彩梦想，正能量链).doc" download>材料3 (多彩梦想，正能量链).doc</a></li>
+    </ul>
 </body>
 </html>
